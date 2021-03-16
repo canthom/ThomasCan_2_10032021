@@ -1,0 +1,41 @@
+/* Utilitaires */
+
+/* Backgroud Color */
+
+.bg--white {
+  
+}
+
+.bg--light {
+  background-color: var(--color-primary-light);
+}
+
+/* Titres & Paragraphe */
+.heading-1 {
+
+}
+
+.heading-2 {
+
+}
+
+.heading-3 {
+
+}
+
+.heading-4 {
+
+}
+
+.paragraph {
+  
+}
+
+/* Boutons */
+.btn {
+
+}
+
+.btn--cta {
+
+}
