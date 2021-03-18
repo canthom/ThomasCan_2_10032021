@@ -1,5 +1,87 @@
+/* Global */
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #000;
 }
 
+ul, ol {
+  list-style: none;
+
+  /* CHECK AVEC PIERRE */
+  padding: 0; 
+}
+
+button {
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  outline: none;
+}
+
+/* Header */
+.header {
+  height: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding: 1rem;
+  width: 10rem;
+  justify-self: flex-start;
+}
+
+.header__nav {
+  order: 3;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  flex-basis: 50%;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.header__link {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 1rem;
+
+  border-bottom: 3px solid transparent;
+}
+
+.header__link--active {
+
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.header__register {
+  padding: 1rem;
+  justify-self: flex-end;
+}
+
+/* Search */
+.main-header {
+  padding: 1rem;
+}
