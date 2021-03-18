@@ -2,5 +2,8 @@
 :root {
   --color-primary: #0065fc;
   --color-primary-light: #deebff;
+
   --color-secondary: #f2f2f2;
+
+  --color-white: #fff;
 }

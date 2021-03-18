@@ -173,3 +173,41 @@ input {
   background-color: var(--color-secondary);
   padding: 1rem;
 }
+
+.popular__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.popular__card {
+  height: 100px;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+
+  display: flex;
+}
+
+.popular__card img {
+  width: 40%;
+  padding-right: 1rem;
+  border-radius: 15px 0 0 15px;
+}
+
+.popular__info {
+  padding-right: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popular__info p {
+  font-size: .7rem;
+}
+
+.popular__icons {
+  color: var(--color-primary);
+  font-size: .5rem;
+}
