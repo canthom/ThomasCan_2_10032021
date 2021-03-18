@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  color: #000;
 }
 
 a {
@@ -23,6 +24,10 @@ button {
   border: none;
   padding: 1rem;
   outline: none;
+}
+
+input {
+  border: none;
 }
 
 /* Header */
@@ -84,4 +89,41 @@ button {
 /* Search */
 .main-header {
   padding: 1rem;
+}
+
+.search {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid var(--color-secondary);
+  border-radius: 12px;
+}
+
+.search__gps {
+  background-color: var(--color-secondary);
+}
+
+.search__input {
+  justify-self: flex-start;
+
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.search__button {
+  justify-self: flex-end;
+  color: #fff;
 }
