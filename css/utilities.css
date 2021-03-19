@@ -37,7 +37,7 @@
 
 /* Boutons */
 .btn {
-  color: #000;
+  color: var(var(--color-black));
   border-radius: 12px;
 }
 
@@ -68,6 +68,10 @@
 
 .mb-smallest {
   margin-bottom: 1rem;
+}
+
+.mb-small {
+  margin-bottom: 2rem;
 }
 
 /* Padding */
@@ -101,6 +105,7 @@
 }
 
 .card__info {
+  height: 100%;
   padding-right: .5rem;
   display: flex;
   flex-direction: column;
@@ -108,7 +113,7 @@
 }
 
 .card__info p {
-  font-size: .7rem;
+  font-size: .85rem;
 }
 
 .card__icons {
