@@ -1,5 +1,4 @@
 /* Global */
-
 body {
   font-family: 'Raleway', sans-serif;
   color: #000;
@@ -14,7 +13,8 @@ ul, ol {
   list-style: none;
 
   /* CHECK AVEC PIERRE */
-  padding: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -32,8 +32,6 @@ input {
 
 /* Header */
 .header {
-  height: auto;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,7 +39,6 @@ input {
 
 .header__logo {
   padding: 1rem;
-  width: 10rem;
   justify-self: flex-start;
 }
 
@@ -72,7 +69,7 @@ input {
   text-align: center;
   padding: 1rem;
 
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid var(--color-secondary);
 }
 
 .header__link--active {
@@ -88,7 +85,7 @@ input {
 
 /* Search */
 .main-header {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .search {
@@ -147,7 +144,10 @@ input {
   border-radius: 50%;
   padding: .8rem;
   width: 1rem;
-  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .filters__link {
@@ -170,7 +170,6 @@ input {
 
 /* Popular */
 .popular {
-  background-color: var(--color-secondary);
   padding: 1rem;
 }
 
@@ -178,7 +177,6 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: .5rem;
 }
 
 .popular__card {
@@ -210,4 +208,12 @@ input {
 .popular__icons {
   color: var(--color-primary);
   font-size: .5rem;
+}
+
+/* Footer */
+footer > div:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+.footer__item {
+  padding: .3rem 0;
 }

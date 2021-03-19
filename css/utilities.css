@@ -1,13 +1,11 @@
-/* Utilitaires */
-
 /* Backgroud Color */
 
 .bg--white {
   background-color: var(--color-white);
 }
 
-.bg--light {
-  background-color: var(--color-primary-light);
+.bg--secondary {
+  background-color: var(--color-secondary);
 }
 
 /* Color */
@@ -22,7 +20,7 @@
 }
 
 .heading-2 {
-
+  margin: 0;
 }
 
 .heading-3 {
@@ -45,4 +43,41 @@
 
 .btn--cta {
   background-color: var(--color-primary);
+}
+
+/* Margin Top & Botton */
+.m-smallest {
+  margin: 1rem 0;
+}
+
+.m-small {
+  margin: 2rem 0;
+}
+
+.m-medium {
+  margin: 3rem 0;
+}
+
+.m-large {
+  margin: 4rem 0;
+}
+
+.m-largest {
+  margin: 5rem 0;
+}
+
+.mb-smallest {
+  margin-bottom: 1rem;
+}
+
+/* Padding */
+.p-smallest {
+  padding: 1rem;
+}
+
+.p-small {
+  padding: 2rem;
+}
+.p-medium {
+  padding: 3rem 0;
 }
