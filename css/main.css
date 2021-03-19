@@ -12,7 +12,7 @@ a {
 ul, ol {
   list-style: none;
 
-  /* CHECK AVEC PIERRE */
+  /* CHECK AVEC PIERRE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   padding: 0;
   margin: 0;
 }
@@ -30,6 +30,7 @@ input {
   border: none;
 }
 
+/* /////// */
 /* Header */
 .header {
   display: flex;
@@ -38,7 +39,6 @@ input {
 }
 
 .header__logo {
-  padding: 1rem;
   justify-self: flex-start;
 }
 
@@ -67,7 +67,6 @@ input {
 .header__link {
   flex-basis: 100%;
   text-align: center;
-  padding: 1rem;
 
   border-bottom: 3px solid var(--color-secondary);
 }
@@ -79,10 +78,10 @@ input {
 }
 
 .header__register {
-  padding: 1rem;
   justify-self: flex-end;
 }
 
+/* /////// */
 /* Search */
 .main-header {
   padding: 0 1rem;
@@ -125,6 +124,7 @@ input {
   color: #fff;
 }
 
+/* //////// */
 /* Filters */
 .filters__list {
   display: flex;
@@ -168,11 +168,8 @@ input {
   border-radius: 50%;
 }
 
+/* //////// */
 /* Popular */
-.popular {
-  padding: 1rem;
-}
-
 .popular__header {
   display: flex;
   justify-content: space-between;
@@ -182,34 +179,31 @@ input {
 .popular__card {
   height: 100px;
   padding: 5px;
-  border-radius: 15px;
-  margin-bottom: 1rem;
-
-  display: flex;
 }
 
-.popular__card img {
-  width: 40%;
-  padding-right: 1rem;
-  border-radius: 15px 0 0 15px;
+/* ////////// */
+/* Activités */
+.activities__card img {
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 15px 15px 0 0;
+  width: auto;
+  height: 70%;
 }
 
-.popular__info {
-  padding-right: .5rem;
-  display: flex;
+.activities__card {
+  padding: 0;
   flex-direction: column;
-  justify-content: space-between;
+  height: 200px;
 }
 
-.popular__info p {
-  font-size: .7rem;
+.activities .card__info {
+  padding: 1rem;
+  height: 100%;
+  justify-content: center;
 }
 
-.popular__icons {
-  color: var(--color-primary);
-  font-size: .5rem;
-}
-
+/* /////// */
 /* Footer */
 footer > div:not(:last-child) {
   margin-bottom: 2.5rem;
