@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/utilities.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 
   <!-- Title -->
   <title>Reservia &mdash; Trouvez votre hébergement pour des vacances de rêve</title>
@@ -33,29 +34,29 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
-          <a href="#" class="header__link header__link--active p-smallest">Hébergements</a>
+          <a href="#lodging" class="header__link header__link--active">Hébergements</a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link p-smallest">Activités</a>
+          <a href="#activities" class="header__link">Activités</a>
         </li>
       </ul>
     </nav>
 
-    <div class="header__register p-smallest">
-      <button class="header__btn">S'inscrire</button>
+    <div class="header__register">
+      <a class="header__btn">S'inscrire</a>
     </div>
 
   </header>
 
   <main class="main">
 
-    <header class="main-header m-small">
+    <header class="main-header">
       <h1 class="heading-1">Trouvez votre hébergement pour des vacances de rêve</h1>
       <p class="paragraph">En plein centre ville ou en pleine nature</p>
 
       <form action="#" class="search m-medium">
         <div class="search__gps">
-          <button class="btn">
+          <button class="btn color--black">
             <i class="fas fa-map-marker-alt"></i>
           </button>
         </div>
@@ -109,63 +110,65 @@
         <i class="fas fa-chart-line"></i>
       </div>
 
-      <div class="card popular__card bg--white mb-smallest">
-        <img src="./img/lodging/soleil-du-matin.jpg" alt="Photo de l'hôtel Le soleil du matin">
-        <div class="card__info">
-          <div class="card__text">
-            <h4 class="heading-4">Hôtel Le soleil du matin</h4>
-            <p class="paragraph">Nuit à partir de 128€</p>
-          </div>
-          <div class="card__icons">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="card popular__card bg--white mb-smallest">
-        <img src="./img/lodging/coeur-de-l-eau.jpg" alt="Photo d'Au coeur de l'eau">
-        <div class="card__info">
-          <div class="card__text">
-            <h4 class="heading-4">Au cœur de l'eau Chambres d'hôtes</h4>
-            <p class="paragraph">Nuit à partir de 71€</p>
-          </div>
-          <div class="card__icons">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star color--secondary"></i>
+      <div class="container">
+        <div class="card popular__card bg--white mb-smallest">
+          <img src="./img/lodging/soleil-du-matin.jpg" alt="Photo de l'hôtel Le soleil du matin">
+          <div class="card__info">
+            <div class="card__text">
+              <h4 class="heading-4">Hôtel Le soleil du matin</h4>
+              <p class="paragraph">Nuit à partir de 128€</p>
+            </div>
+            <div class="card__icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card popular__card bg--white mb-smallest">
-        <img src="./img/lodging/tout-bleu-et-blanc.jpg" alt="Photo de l'hôtel Tout bleu et Blanc">
-        <div class="card__info">
-          <div class="card__text">
-            <h4 class="heading-4">Hôtel Tout bleu et Blanc</h4>
-            <p class="paragraph">Nuit à partir de 68€</p>
+        <div class="card popular__card bg--white mb-smallest">
+          <img src="./img/lodging/coeur-de-l-eau.jpg" alt="Photo d'Au coeur de l'eau">
+          <div class="card__info">
+            <div class="card__text">
+              <h4 class="heading-4">Au cœur de l'eau Chambres d'hôtes</h4>
+              <p class="paragraph">Nuit à partir de 71€</p>
+            </div>
+            <div class="card__icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star color--secondary"></i>
+            </div>
           </div>
-          <div class="card__icons">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star color--secondary"></i>
+        </div>
+
+        <div class="card popular__card bg--white mb-smallest">
+          <img src="./img/lodging/tout-bleu-et-blanc.jpg" alt="Photo de l'hôtel Tout bleu et Blanc">
+          <div class="card__info">
+            <div class="card__text">
+              <h4 class="heading-4">Hôtel Tout bleu et Blanc</h4>
+              <p class="paragraph">Nuit à partir de 68€</p>
+            </div>
+            <div class="card__icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star color--secondary"></i>
+            </div>
           </div>
         </div>
       </div>
 
     </section>
 
-    <section class="lodging p-smallest m-smallest">
-      <h2 class="heading-2 mb-small">Hébergements à Marseille</h2>
+    <section id="lodging" class="lodging">
+      <h2 class="heading-2">Hébergements à Marseille</h2>
 
-      <div class="card lodging__card bg--white mb-smallest">
+      <div class="card lodging__card bg--white">
         <img src="./img/lodging/auberge-cannebiere.jpg" alt="Photo de l'Auberge la Cannebière">
         <div class="card__info">
           <div class="card__text">
@@ -271,8 +274,8 @@
 
     </section>
 
-    <section class="activities p-smallest m-smallest">
-      <h2 class="heading-2 mb-small">Activités à Marseille</h2>
+    <section id="activities" class="activities">
+      <h2 class="heading-2 mb-smallest">Activités à Marseille</h2>
 
       <div class="card activities__card bg--white mb-smallest">
         <img src="./img/activities/vieux-port.jpg" alt="Photo du Vieux Port de Marseille">
@@ -324,7 +327,7 @@
 
   </main>
 
-  <footer class="footer bg--secondary p-small">
+  <footer class="footer bg--secondary">
     <div class="footer__about">
       <h3 class="footer__title heading-3">A propos</h3>
       <ul class="footer__list">
