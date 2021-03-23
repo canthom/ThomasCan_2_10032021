@@ -28,7 +28,6 @@ ol {
 button {
   background-color: transparent;
   color: var(--color-primary);
-  font-weight: 700;
   border: none;
   padding: 1.6rem;
   outline: none;
@@ -71,7 +70,7 @@ input {
   font-size: var(--default-font-size);
   flex-basis: 100%;
   text-align: center;
-
+  padding: 1rem;
   border-bottom: 3px solid var(--color-secondary);
 }
 
@@ -80,15 +79,23 @@ input {
   border-bottom: 3px solid var(--color-primary);
 }
 
+.header__btn {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.header__logo,
+.header__register {
+  padding: 2rem;
+}
+
 /* ///// */
 /* Main */
-.main {
-  padding: 0 5rem;
-}
 
 /* /////// */
 /* Search */
 .search {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,7 +138,6 @@ input {
 .filters__list {
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
 }
 .filters__item {
   font-weight: 700;
@@ -147,7 +153,7 @@ input {
   background-color: var(--color-primary-light);
   color: var(--color-primary);
   border-radius: 50%;
-  padding: 1.5rem;
+  padding: 1.3rem;
 
   display: flex;
   justify-content: center;
@@ -155,7 +161,7 @@ input {
 }
 
 .filters__link {
-  padding: 1.5rem;
+  padding: 1.3rem;
 }
 
 .filters__info {

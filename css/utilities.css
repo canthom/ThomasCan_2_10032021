@@ -24,7 +24,7 @@
 
 .heading-2 {
   margin: 0;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .heading-3 {
@@ -93,6 +93,7 @@
 
 /* Card */
 .card {
+  overflow: hidden;
   border-radius: 15px;
   display: flex;
 
