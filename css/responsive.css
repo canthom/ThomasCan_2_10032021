@@ -9,6 +9,21 @@
   html {
     font-size: 75%;
   }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer > div {
+    flex-basis: 50%;
+  }
+
+  .footer__help {
+    flex-basis: 100%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -41,6 +56,16 @@
     border-top: 3px solid var(--color-primary);
   }
 
+  /* Main */
+  .main {
+    padding: 5rem;
+  }
+
+  /* Popular */
+  .popular__header {
+    padding: 2rem 0;
+  }
+
   /* Activities */
   .activities {
     display: flex;
@@ -49,7 +74,6 @@
 
   /* Footer */
   .footer {
-    display: flex;
     padding: 5rem;
   }
 
