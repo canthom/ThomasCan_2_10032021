@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   /* 1rem = 10px  */
   /* 10/16 * 100 */
@@ -19,10 +25,6 @@ a {
 ul,
 ol {
   list-style: none;
-
-  /* CHECK AVEC PIERRE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  padding: 0;
-  margin: 0;
 }
 
 button {
@@ -132,7 +134,7 @@ input {
   color: var(--color-white);
 }
 
-/* /////// */
+/* ///////// */
 /* //////// */
 /* Filters */
 .filters__list {
@@ -154,7 +156,8 @@ input {
   color: var(--color-primary);
   border-radius: 50%;
   padding: 1.3rem;
-
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,30 +193,15 @@ input {
 }
 
 .popular__card {
-  height: 140px;
-  padding: 5px;
+  height: 150px;
+  padding: 0.5rem;
 }
 
 /* ///////////// */
 /* Hébergements */
-.lodging__card img {
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 15px 15px 0 0;
-  width: auto;
-  height: 60%;
-}
-.lodging__card {
-  padding: 0;
-  flex-direction: column;
-  height: 190px;
-}
-
 .lodging__card .card__info {
   padding: 0.5rem 1rem;
 }
-
-/* Transformer les card lodging + activities en card--horizontal !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .lodging__more {
   font-weight: 700;
@@ -222,17 +210,7 @@ input {
 /* ////////// */
 /* Activités */
 .activities__card img {
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 15px 15px 0 0;
-  width: auto;
   height: 70%;
-}
-
-.activities__card {
-  padding: 0;
-  flex-direction: column;
-  height: 190px;
 }
 
 .activities .card__info {
