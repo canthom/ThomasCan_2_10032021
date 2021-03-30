@@ -113,7 +113,6 @@ input {
 
 .search__input {
   justify-self: flex-start;
-
   width: 100%;
   padding: 1rem;
   font-family: inherit;
@@ -132,6 +131,10 @@ input {
 .search__button {
   justify-self: flex-end;
   color: var(--color-white);
+}
+
+.search__button p {
+  display: none;
 }
 
 /* ///////// */
@@ -172,6 +175,7 @@ input {
   align-items: center;
   position: relative;
 }
+
 .filters__info i {
   padding: 0.75rem 1rem;
   margin-right: 0.5rem;

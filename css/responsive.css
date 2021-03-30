@@ -74,13 +74,14 @@
 
   .header {
     flex-wrap: nowrap;
-    height: 100px;
     align-items: center;
+    height: 100px;
   }
 
   .header__logo,
   .header__register {
-    padding: 5rem;
+    padding: 4rem;
+    padding-bottom: 0;
   }
 
   .header__logo {
@@ -103,15 +104,24 @@
   }
 
   .header__link {
-    background-color: blanchedalmond;
-    height: 100%;
+    padding: 4rem;
+    padding-bottom: 0;
     border-top: 3px solid var(--color-secondary);
     border-bottom: none;
+    transition: color 0.2s;
   }
 
   .header__link--active {
     color: var(--color-primary);
     border-top: 3px solid var(--color-primary);
+  }
+
+  .header__link:hover {
+    color: var(--color-primary);
+  }
+
+  .header__register {
+    height: 100%;
   }
 
   /* Main */
@@ -125,6 +135,21 @@
   .main-header {
     flex-basis: 100%;
     padding: 0;
+  }
+
+  /* Search */
+  .search {
+    transition: width 0.2s;
+    width: 30%;
+  }
+
+  .search__button p {
+    font-weight: 700;
+    display: contents;
+  }
+
+  .search__button i {
+    display: none;
   }
 
   /* Filters */
