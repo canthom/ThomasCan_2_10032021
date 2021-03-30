@@ -169,11 +169,16 @@
   }
   .lodging__more {
     flex-basis: 100%;
+    transition: all 0.2s;
+  }
+  .lodging__more:hover {
+    color: var(--color-primary);
   }
 
   /* Popular */
   .popular {
-    flex-basis: 27.5%;
+    margin-left: 5rem;
+    flex: 1;
     border-radius: 2rem;
     order: 2;
     padding: 2rem 3rem;
