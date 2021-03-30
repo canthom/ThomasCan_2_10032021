@@ -127,6 +127,30 @@
     padding: 0;
   }
 
+  /* Filters */
+  .filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .filters h2 {
+    margin: 0;
+  }
+  .filters__item {
+    margin: 0 2rem;
+  }
+  .filters__info {
+    flex-basis: 100%;
+  }
+
+  .filters__item:hover {
+    background-color: var(--color-secondary);
+  }
+
+  .filters__item:hover .filters__link {
+    color: var(--color-primary);
+  }
+
   /* Hébergements */
   .lodging {
     background-color: var(--color-secondary);
@@ -216,20 +240,5 @@
 
   .footer__item {
     margin-right: 20rem;
-  }
-
-  .filters {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .filters h2 {
-    margin: 0;
-  }
-  .filters__item {
-    margin: 0;
-  }
-  .filters__info {
-    flex-basis: 100%;
   }
 }
