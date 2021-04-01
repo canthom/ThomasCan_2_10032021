@@ -69,7 +69,7 @@
 }
 
 /* Desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   /* Header */
 
   .header {
@@ -80,18 +80,18 @@
 
   .header__logo,
   .header__register {
-    padding: 4rem;
+    padding: 5rem 6rem;
     padding-bottom: 0;
   }
 
   .header__logo {
-    flex-basis: 80%;
+    flex: 2;
   }
 
   .header__nav {
     height: 100%;
-    width: 30%;
     order: 0;
+    flex: 1;
   }
 
   .header__list {
@@ -100,11 +100,10 @@
 
   .header__item {
     height: 100%;
-    flex-basis: 100%;
   }
 
   .header__link {
-    padding: 4rem;
+    padding-top: 5rem;
     padding-bottom: 0;
     border-top: 3px solid var(--color-secondary);
     border-bottom: none;
@@ -126,7 +125,7 @@
 
   /* Main */
   .main {
-    padding: 4rem;
+    padding: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -160,6 +159,7 @@
   }
   .filters h2 {
     margin: 0;
+    margin-right: 2rem;
   }
   .filters__item {
     margin: 0 2rem;
@@ -180,18 +180,19 @@
   .lodging {
     background-color: var(--color-secondary);
     border-radius: 2rem;
-    flex-basis: 70%;
-    padding: 2rem 3rem;
+    flex: 2.5;
+    padding: 4rem;
   }
   .lodging h2 {
-    padding: 2rem 0;
+    padding-bottom: 2rem;
   }
   .lodging__card {
     flex-basis: 30%;
+    height: 250px;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
   }
-  .lodging__card img {
-    height: 70%;
-  }
+
   .lodging__more {
     flex-basis: 100%;
     transition: all 0.2s;
@@ -206,25 +207,36 @@
     flex: 1;
     border-radius: 2rem;
     order: 2;
-    padding: 2rem 3rem;
+    padding: 4rem;
   }
   .popular__header {
-    padding: 2rem 0;
+    margin-bottom: 3rem;
   }
+
   .popular__card {
-    height: 200px;
+    height: 180px;
+  }
+
+  .popular__card {
+    margin-bottom: 3rem;
+  }
+
+  .popular__card:last-of-type {
+    margin-bottom: 0;
   }
 
   /* Activities */
   .activities {
-    margin-top: 3rem;
     width: 100%;
+    margin-top: 3rem;
     padding: 2rem 0;
     order: 3;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .activities__container {
   }
   .activities__card img {
     height: 80%;
