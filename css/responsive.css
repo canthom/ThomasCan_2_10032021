@@ -2,13 +2,23 @@
 
 /* Phone = 600px ou moins */
 /* Tablet Portrait = de 600 à 900px */
-/* Tablet Landscape = de 900 à 1200px */
+/* Tablet Landscape = de 900 à 1400px */
 /* Desktop = 1200px ou plus */
 
 /* Tablet Portrait */
 @media (min-width: 600px) {
   html {
     font-size: 75%;
+  }
+
+  .header__logo,
+  .header__register,
+  .main-header,
+  .popular,
+  .lodging,
+  .activities,
+  .footer {
+    padding: 3rem;
   }
 
   /* Card */
@@ -43,7 +53,7 @@
 
   /* Hébergements */
   .lodging,
-  .activities {
+  .activities__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -125,6 +135,8 @@
 
   /* Main */
   .main {
+    overflow: hidden;
+
     padding: 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +175,9 @@
   }
   .filters__item {
     margin: 0 2rem;
+  }
+  .filters__link {
+    padding: 0 2rem;
   }
   .filters__info {
     flex-basis: 100%;
@@ -209,9 +224,6 @@
     order: 2;
     padding: 4rem;
   }
-  .popular__header {
-    margin-bottom: 3rem;
-  }
 
   .popular__card {
     height: 180px;
@@ -227,7 +239,6 @@
 
   /* Activities */
   .activities {
-    width: 100%;
     margin-top: 3rem;
     padding: 2rem 0;
     order: 3;
@@ -235,8 +246,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .activities__container {
   }
   .activities__card img {
     height: 80%;
@@ -247,7 +256,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height: 500px;
+    height: 50rem;
   }
 
   .activities__card h4 {
