@@ -242,46 +242,47 @@
     margin-top: 3rem;
     padding: 2rem 0;
     order: 3;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 30vw;
   }
   .activities__card img {
-    height: 80%;
+    flex-grow: 1;
+  }
+  .activities__card .card__info {
+    height: 60px !important;
   }
 
   .activities__container {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-    height: 50rem;
   }
 
   .activities__card h4 {
     margin: 0;
   }
 
-  .activities__card:not(:last-of-type) {
+  .activities__card {
     margin-right: 5rem;
   }
+
   .activities__card:nth-of-type(1),
   .activities__card:nth-of-type(4) {
     flex-basis: 100%;
   }
 
   .activities__card:nth-of-type(2) {
-    flex-grow: 1;
+    flex: 3;
   }
 
   .activities__card:nth-of-type(3) {
-    flex-shrink: 1;
+    flex: 2;
   }
 
   .activities__card:nth-of-type(5),
   .activities__card:nth-of-type(6) {
-    flex-grow: 1;
+    flex: 1;
+    margin-right: 0;
   }
 
   /* Footer */
