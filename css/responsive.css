@@ -154,7 +154,7 @@
     width: 30%;
   }
 
-  .search__button p {
+  .search__button::after {
     font-weight: 700;
     display: contents;
   }

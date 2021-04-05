@@ -135,7 +135,8 @@ input {
   background-color: var(--color-black);
 }
 
-.search__button p {
+.search__button:after {
+  content: 'Rechercher';
   display: none;
 }
 
