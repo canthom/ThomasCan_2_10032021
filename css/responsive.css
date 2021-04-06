@@ -283,13 +283,4 @@
   .activities__card:nth-of-type(6) {
     flex: 1;
   }
-
-  /* Footer */
-  .footer {
-    padding: 4rem;
-  }
-
-  .footer__item {
-    margin-right: 20rem;
-  }
 }
