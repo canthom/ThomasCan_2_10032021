@@ -283,4 +283,9 @@
   .activities__card:nth-of-type(6) {
     flex: 1;
   }
+
+  /* Footer */
+  .footer > div:last-of-type {
+    margin-right: 25%;
+  }
 }
