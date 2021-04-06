@@ -214,6 +214,7 @@ input {
 }
 .lodging__card .card__info {
   padding: 0.5rem 1rem;
+  height: 40%;
 }
 
 .lodging__more {
