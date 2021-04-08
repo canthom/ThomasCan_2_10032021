@@ -3,8 +3,10 @@
 /* Phone = 600px ou moins */
 /* Tablet Portrait = de 600 à 900px */
 /* Tablet Landscape = de 900 à 1400px */
-/* Desktop = 1200px ou plus */
+/* Desktop = de 1200 à 1920px */
+/* Big Screen = 1920px ou plus */
 
+/* //////////////// */
 /* Tablet Portrait */
 @media (min-width: 600px) {
   html {
@@ -17,7 +19,7 @@
   .popular,
   .lodging,
   .activities,
-  .footer {
+  .footer__container {
     padding: 3rem;
   }
 
@@ -31,23 +33,24 @@
   }
 
   /* Footer */
-  .footer {
+  .footer__container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .footer > div {
+  .footer__container > div {
     flex-basis: 50%;
   }
 }
 
+/* ///////////////// */
 /* Tablet Landscape */
 @media (min-width: 900px) {
   .main-header,
   .popular,
   .lodging,
   .activities,
-  .footer {
+  .footer__container {
     padding: 5rem;
   }
 
@@ -60,20 +63,20 @@
   }
 
   .lodging h2,
-  .lodging_more {
+  .lodging__more {
     flex-basis: 100%;
   }
 
-  .lodging__card,
-  .activities__card {
+  .card--lodging,
+  .card--activities {
     flex-basis: 45%;
   }
 
   /* Footer */
-  .footer {
+  .footer__container {
     justify-content: space-between;
   }
-  .footer > div {
+  .footer__container > div {
     flex-basis: auto;
   }
 }
@@ -148,18 +151,18 @@
     padding: 0;
   }
 
+  /* /////// */
   /* Search */
   .search {
-    transition: width 0.2s;
     width: 30%;
   }
 
-  .search__button::after {
+  .btn--search::after {
     font-weight: 700;
     display: contents;
   }
 
-  .search__button i {
+  .btn--search i {
     display: none;
   }
 
@@ -191,21 +194,44 @@
     color: var(--color-primary);
   }
 
+  /* Card */
+  .card--popular {
+    height: 180px;
+    margin-bottom: 3rem;
+  }
+
+  .card--popular:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .card--lodging {
+    flex-basis: 30%;
+    height: 250px;
+    margin-bottom: 3rem;
+  }
+
+  .card--activities img {
+    flex-grow: 1;
+  }
+  .card--activities .card__info {
+    height: 60px !important;
+  }
+
+  .card--activities h4 {
+    margin: 0;
+  }
+
+  .card--activities {
+    width: 22.5%;
+    margin-bottom: 0;
+  }
+
   /* Hébergements */
   .lodging {
     background-color: var(--color-secondary);
     border-radius: 2rem;
     flex: 2.5;
     padding: 4rem;
-  }
-  .lodging h2 {
-    padding-bottom: 2rem;
-  }
-  .lodging__card {
-    flex-basis: 30%;
-    height: 250px;
-    padding: 0.5rem;
-    margin-bottom: 3rem;
   }
 
   .lodging__more {
@@ -214,6 +240,12 @@
   }
   .lodging__more:hover {
     color: var(--color-primary);
+  }
+  .lodging h2,
+  .popular__header {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
   }
 
   /* Popular */
@@ -225,67 +257,53 @@
     padding: 4rem;
   }
 
-  .popular__card {
-    height: 180px;
-  }
-
-  .popular__card {
-    margin-bottom: 3rem;
-  }
-
-  .popular__card:last-of-type {
-    margin-bottom: 0;
-  }
-
   /* Activities */
   .activities {
     margin-top: 3rem;
     padding: 2rem 0;
     order: 3;
-    height: 30vw;
-  }
-  .activities__card img {
-    flex-grow: 1;
-  }
-  .activities__card .card__info {
-    height: 60px !important;
+    height: 600px;
   }
 
   .activities__container {
-    overflow: hidden;
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
-  .activities__card h4 {
-    margin: 0;
+  .card--activities:nth-of-type(2),
+  .card--activities:nth-of-type(5) {
+    margin-bottom: 3rem;
   }
 
-  .activities__card {
-    width: 22.5%;
-  }
-
-  .activities__card:nth-of-type(1),
-  .activities__card:nth-of-type(4) {
+  .card--activities:nth-of-type(1),
+  .card--activities:nth-of-type(4) {
     flex-basis: 100%;
   }
 
-  .activities__card:nth-of-type(2) {
+  .card--activities:nth-of-type(2) {
     flex: 3;
   }
 
-  .activities__card:nth-of-type(3) {
+  .card--activities:nth-of-type(3) {
     flex: 2;
   }
 
-  .activities__card:nth-of-type(5),
-  .activities__card:nth-of-type(6) {
+  .card--activities:nth-of-type(5),
+  .card--activities:nth-of-type(6) {
     flex: 1;
   }
 
   /* Footer */
-  .footer > div:last-of-type {
+  .footer__container > div:last-of-type {
     margin-right: 25%;
+  }
+}
+
+/* HD 1920px ou plus */
+@media (min-width: 1920px) {
+  .header,
+  .main,
+  .footer__container {
+    max-width: 1920px;
+    margin: auto;
   }
 }

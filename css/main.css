@@ -31,7 +31,7 @@ input {
   border: none;
 }
 
-/* /////// */
+/* //////// */
 /* /////// */
 /* Header */
 .header {
@@ -73,11 +73,6 @@ input {
   border-bottom: 3px solid var(--color-primary);
 }
 
-.header__btn {
-  color: var(--color-primary);
-  font-weight: 700;
-}
-
 /* ///// */
 /* Main */
 .header__logo,
@@ -86,7 +81,7 @@ input {
 .popular,
 .lodging,
 .activities,
-.footer {
+.footer__container {
   padding: 2rem;
 }
 
@@ -98,6 +93,7 @@ input {
   justify-content: space-between;
   align-items: center;
 
+  margin: 3rem 0;
   border: 1px solid var(--color-secondary);
   border-radius: 12px;
   font-size: var(--default-font-size);
@@ -124,29 +120,18 @@ input {
   color: var(--color-black);
 }
 
-.search__button {
-  justify-self: flex-end;
-  color: var(--color-white);
-  border-radius: 0;
-  transition: all 0.2s;
-}
-
-.search__button:hover {
-  background-color: var(--color-black);
-}
-
-.search__button:after {
-  content: 'Rechercher';
-  display: none;
-}
-
 /* ///////// */
 /* //////// */
 /* Filters */
+.filters h2 {
+  margin-bottom: 2rem;
+}
+
 .filters__list {
   display: flex;
   flex-wrap: wrap;
 }
+
 .filters__item {
   font-weight: 700;
   border: 2px solid var(--color-secondary);
@@ -156,9 +141,11 @@ input {
   margin-top: 1rem;
   margin-right: 1rem;
 }
+
 .filters__item:nth-of-type(2) {
   margin-right: 0;
 }
+
 .filters__item div {
   background-color: var(--color-primary-light);
   color: var(--color-primary);
@@ -176,6 +163,7 @@ input {
 }
 
 .filters__info {
+  margin: 3rem 0 1.5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -196,21 +184,14 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3rem;
-}
-.popular__header i {
+  margin: 2rem 0;
   font-size: 2.25rem;
-}
-
-.popular__card {
-  height: 150px;
-  padding: 0.5rem;
 }
 
 /* ///////////// */
 /* Hébergements */
 .lodging h2 {
-  padding-bottom: 2rem;
+  margin: 2rem 0;
 }
 .lodging__card .card__info {
   padding: 0.5rem 1rem;
@@ -225,6 +206,7 @@ input {
 /* Activités */
 .activities {
   width: 100%;
+  height: 100%;
 }
 .activities h2 {
   padding-bottom: 3rem;
@@ -232,29 +214,23 @@ input {
 .activities__container {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
-}
-.activities__card {
-  margin-bottom: 2rem;
-}
-.activities__card img {
-  height: 70%;
-}
-
-.activities .card__info {
-  justify-content: center;
 }
 
 /* /////// */
 /* Footer */
-.footer {
-  overflow: hidden;
+.footer__container {
+  padding-top: 3rem;
+  width: 100%;
 }
 
-footer > div:not(:last-child) {
+.footer__container > div:not(:last-child) {
   margin-bottom: 4rem;
 }
 
 .footer__item {
   padding: 0.8rem 0;
+}
+
+.footer a:hover {
+  color: var(--color-primary);
 }
